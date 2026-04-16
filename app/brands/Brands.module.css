@@ -1,0 +1,243 @@
+.page {
+  min-height: calc(100vh - 200px);
+  padding: 3rem 1.5rem;
+  background: linear-gradient(135deg, #0a1628 0%, #0f2137 100%);
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+/* Шапка */
+.header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.header h1 {
+  color: #e0e8f0;
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.header p {
+  color: #8a9bb5;
+  font-size: 1.15rem;
+  max-width: 650px;
+  margin: 0 auto 2rem;
+  line-height: 1.7;
+}
+
+/* Поиск */
+.searchWrapper {
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.searchInput {
+  width: 100%;
+  padding: 0.875rem 1.25rem;
+  border: 2px solid #1e2d44;
+  border-radius: 10px;
+  background: #111c2e;
+  color: #d0d8e8;
+  font-size: 1rem;
+  transition: border-color 0.2s;
+}
+
+.searchInput:focus {
+  outline: none;
+  border-color: #4a90d9;
+}
+
+.searchInput::placeholder {
+  color: #6b7d95;
+}
+
+/* Нет результатов */
+.noResults {
+  text-align: center;
+  padding: 3rem;
+  background: #111c2e;
+  border-radius: 12px;
+  border: 1px solid #1e2d44;
+}
+
+.noResults p {
+  color: #6b7d95;
+  font-size: 1.1rem;
+}
+
+/* Группы стран */
+.groupSection {
+  margin-bottom: 2.5rem;
+}
+
+.groupHeader {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 1.25rem;
+  padding-bottom: 0.75rem;
+  border-bottom: 1px solid #1e2d44;
+}
+
+.groupHeader h2 {
+  color: #e0e8f0;
+  font-size: 1.5rem;
+  margin: 0;
+}
+
+.flag {
+  font-size: 1.75rem;
+}
+
+.count {
+  color: #6b7d95;
+  font-size: 0.9rem;
+  margin-left: auto;
+}
+
+/* Сетка брендов */
+.brandsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+  gap: 1rem;
+}
+
+.brandCard {
+  background: #111c2e;
+  border: 1px solid #1e2d44;
+  border-radius: 12px;
+  padding: 1.25rem;
+  text-align: center;
+  transition: border-color 0.2s, box-shadow 0.2s, transform 0.2s;
+}
+
+.brandCard:hover {
+  border-color: #4a90d9;
+  box-shadow: 0 4px 16px rgba(74, 144, 217, 0.1);
+  transform: translateY(-2px);
+}
+
+.brandLogo {
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #1e5fa8, #2d7dd2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 0.75rem;
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: #fff;
+  letter-spacing: -0.5px;
+}
+
+.brandCard h3 {
+  color: #e0e8f0;
+  font-size: 1rem;
+  margin-bottom: 0.75rem;
+  font-weight: 600;
+}
+
+.bookBtn {
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid #1e5fa8;
+  border-radius: 6px;
+  background: transparent;
+  color: #4a90d9;
+  font-size: 0.85rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.2s, color 0.2s;
+}
+
+.bookBtn:hover {
+  background: #1e5fa8;
+  color: #fff;
+}
+
+/* CTA секция */
+.ctaSection {
+  text-align: center;
+  background: #111c2e;
+  border: 1px solid #1e2d44;
+  border-radius: 16px;
+  padding: 2.5rem 2rem;
+  margin-top: 2rem;
+}
+
+.ctaSection h2 {
+  color: #e0e8f0;
+  font-size: 1.75rem;
+  margin-bottom: 0.75rem;
+}
+
+.ctaSection p {
+  color: #8a9bb5;
+  font-size: 1.05rem;
+  margin-bottom: 1.5rem;
+}
+
+.ctaActions {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.ctaBtn {
+  background: #1e5fa8;
+  color: #fff;
+  padding: 0.875rem 2rem;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.ctaBtn:hover {
+  background: #2d7dd2;
+}
+
+.phoneLink {
+  color: #6db3f2;
+  text-decoration: none;
+  font-size: 1.1rem;
+  font-weight: 500;
+  transition: color 0.2s;
+}
+
+.phoneLink:hover {
+  color: #4a90d9;
+  text-decoration: underline;
+}
+
+@media (max-width: 600px) {
+  .header h1 {
+    font-size: 1.75rem;
+  }
+
+  .brandsGrid {
+    grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+  }
+
+  .groupHeader {
+    flex-wrap: wrap;
+  }
+
+  .count {
+    margin-left: 0;
+  }
+
+  .ctaActions {
+    flex-direction: column;
+  }
+}

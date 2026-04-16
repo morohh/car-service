@@ -1,0 +1,215 @@
+.page {
+  min-height: 100vh;
+}
+
+/* Hero секция */
+.hero {
+  background: linear-gradient(135deg, #0a1628 0%, #0f2137 50%, #162d50 100%);
+  color: #fff;
+  padding: 6rem 1.5rem;
+  text-align: center;
+}
+
+.heroContent h1 {
+  font-size: 3rem;
+  margin-bottom: 1.5rem;
+  color: #4a90d9;
+}
+
+.heroContent p {
+  font-size: 1.25rem;
+  max-width: 700px;
+  margin: 0 auto 2rem;
+  color: #c0ccdd;
+  line-height: 1.8;
+}
+
+.heroButtons {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.primaryButton {
+  background-color: #1e5fa8;
+  color: #fff;
+  padding: 1rem 2rem;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1.1rem;
+  transition: background-color 0.2s, transform 0.2s;
+}
+
+.primaryButton:hover {
+  background-color: #2d7dd2;
+  transform: translateY(-2px);
+}
+
+.secondaryButton {
+  background-color: transparent;
+  color: #fff;
+  padding: 1rem 2rem;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1.1rem;
+  border: 2px solid #4a90d9;
+  transition: background-color 0.2s, color 0.2s, transform 0.2s;
+}
+
+.secondaryButton:hover {
+  background-color: #4a90d9;
+  transform: translateY(-2px);
+}
+
+/* Секции */
+.section {
+  padding: 4rem 1.5rem;
+}
+
+.darkSection {
+  background-color: #0d1a2d;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.section h2 {
+  text-align: center;
+  font-size: 2.25rem;
+  color: #4a90d9;
+  margin-bottom: 2rem;
+}
+
+.description {
+  text-align: center;
+  font-size: 1.15rem;
+  color: #a0b0c5;
+  max-width: 800px;
+  margin: 0 auto;
+  line-height: 1.8;
+}
+
+/* Услуги */
+.servicesGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.serviceCard {
+  background: #111c2e;
+  padding: 2rem;
+  border-radius: 12px;
+  text-align: center;
+  border: 1px solid #1e2d44;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s, box-shadow 0.2s, border-color 0.2s;
+}
+
+.serviceCard:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px rgba(74, 144, 217, 0.15);
+  border-color: #4a90d9;
+}
+
+.serviceCard h3 {
+  color: #e0e8f0;
+  margin-bottom: 0.75rem;
+  font-size: 1.3rem;
+}
+
+.serviceCard p {
+  color: #8a9bb5;
+  line-height: 1.6;
+}
+
+/* Преимущества */
+.advantagesGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.advantageItem {
+  padding: 1.5rem;
+  border-left: 4px solid #4a90d9;
+  background: #111c2e;
+  border-radius: 0 8px 8px 0;
+  border-top: 1px solid #1e2d44;
+  border-right: 1px solid #1e2d44;
+  border-bottom: 1px solid #1e2d44;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+.advantageItem h3 {
+  color: #e0e8f0;
+  margin-bottom: 0.5rem;
+  font-size: 1.2rem;
+}
+
+.advantageItem p {
+  color: #8a9bb5;
+  line-height: 1.6;
+}
+
+/* CTA секция */
+.ctaSection {
+  background: linear-gradient(135deg, #1e5fa8 0%, #2d7dd2 100%);
+  color: #fff;
+  text-align: center;
+}
+
+.ctaSection h2 {
+  color: #fff;
+}
+
+.ctaSection p {
+  font-size: 1.15rem;
+  margin-bottom: 2rem;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.ctaButton {
+  display: inline-block;
+  background-color: #fff;
+  color: #1e5fa8;
+  padding: 1rem 2.5rem;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1.1rem;
+  transition: background-color 0.2s, transform 0.2s;
+}
+
+.ctaButton:hover {
+  background-color: #0a1628;
+  color: #fff;
+  transform: translateY(-2px);
+}
+
+/* Адаптивность */
+@media (max-width: 768px) {
+  .heroContent h1 {
+    font-size: 2rem;
+  }
+
+  .heroContent p {
+    font-size: 1rem;
+  }
+
+  .section h2 {
+    font-size: 1.75rem;
+  }
+
+  .heroButtons {
+    flex-direction: column;
+    align-items: center;
+  }
+}
